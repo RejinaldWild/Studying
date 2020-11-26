@@ -10,36 +10,148 @@ namespace OverloadingOperators
     {
         static void Main(string[] args)
         {
-            //FirstExc.FirstExcs();
-            //SecondExc.SecondExcs();
-            //ThirdExc.ThirdExcs();
+            //FirstEx.FirstExs();
+            //SecondEx.SecondExs();
+            //ThirdEx.ThirdExs();
+            //FourthEx.FourthExs();
+            //FifthEx.FifthExs();
+            //SixthEx.SixthExs();            
+
         }
     }
 
-    class ThirdExc
+    class FifthEx
+    {
+        private char symb;
+        private int number;        
+
+        public FifthEx(char symb,int number)
+        {
+            this.symb = symb;
+            this.number = number;
+        }
+
+        public static bool operator true(FifthEx obj)
+        {
+            if (10 > Math.Abs(obj.symb-obj.number)) { return true; }
+            else return false;
+        }
+        public static bool operator false(FifthEx obj)
+        {
+            if (10 > Math.Abs(obj.symb-obj.number)) { return false; }
+            else return true;
+        }
+
+        static public void FifthExs()
+        {
+            FifthEx A = new FifthEx('M', 3);
+            FifthEx B = new FifthEx('R', 84);
+            Console.WriteLine(Test(A));
+            Console.WriteLine(Test(B));            
+        }
+
+        public static string Test(FifthEx obj)
+        {
+            if (obj)
+            {
+                return obj.symb.ToString();
+            }
+            else
+            {
+                return "It is not true";
+            }
+        }
+    }
+
+    class FourthEx
+    {
+        private int number;
+        private string txt;
+        public FourthEx(int number, string txt)
+        {
+            this.number = number;
+            this.txt = txt;
+        }
+
+        public static bool operator>(FourthEx obj,FourthEx obj1)
+        {
+            return obj.txt.Length > obj1.txt.Length;
+        }
+        public static bool operator<(FourthEx obj, FourthEx obj1)
+        {
+            return obj.txt.Length < obj1.txt.Length;
+        }
+        public static bool operator >=(FourthEx obj, FourthEx obj1)
+        {
+            return obj.number >= obj1.number;
+        }
+        public static bool operator<=(FourthEx obj, FourthEx obj1)
+        {            
+            return obj.number <= obj1.number;
+        }
+        public static bool operator==(FourthEx obj, FourthEx obj1)
+        {           
+            return (obj.number == obj1.number) && (obj.txt == obj1.txt);
+        }
+        public static bool operator!=(FourthEx obj, FourthEx obj1)
+        {
+            return !(obj.number == obj1.number) || !(obj.txt == obj1.txt);
+        }
+
+        public override int GetHashCode()
+        {            
+            return txt[0]^number;
+        }
+        public override bool Equals(object obj)
+        {
+            FourthEx t = (FourthEx)obj;
+            return (number==t.number)&&(txt==t.txt);
+        }
+
+        public static void FourthExs()
+        {
+            FourthEx A = new FourthEx(2, "hi");
+            FourthEx B = new FourthEx(3, "Archi");
+            FourthEx C = new FourthEx(3, "Archi");
+            Console.WriteLine("A > B? = {0}",A > B);
+            Console.WriteLine("A < B? = {0}", A < B);
+            Console.WriteLine("A >= B? = {0}", A >= B);
+            Console.WriteLine("A <= B? = {0}", A <= B);
+            Console.WriteLine("C = B? = {0}", B == C);
+            Console.WriteLine("A != B? = {0}", A != B);
+            Console.WriteLine("A != B? = {0}", C != B);            
+            Console.WriteLine("C = B? = {0}", B.Equals(C));
+            Console.WriteLine("A = B? = {0}", B.Equals(A));
+            Console.WriteLine(A.GetHashCode());
+            Console.WriteLine(B.GetHashCode());
+            Console.WriteLine(C.GetHashCode());
+        }
+    }
+
+    class ThirdEx
     {
         private int num1=0, num2=0;
-        public ThirdExc (int num1, int num2)
+        public ThirdEx (int num1, int num2)
         {
             this.num1 = num1;
             this.num2 = num2;
         }
 
-        public static bool operator>(ThirdExc obj, ThirdExc obj1)
+        public static bool operator>(ThirdEx obj, ThirdEx obj1)
         {
             if(Math.Pow(obj.num1,2)+ Math.Pow(obj.num2, 2)> Math.Pow(obj1.num1, 2)+ Math.Pow(obj1.num2, 2)) { return true; }
             else return false;
         }
-        public static bool operator<(ThirdExc obj, ThirdExc obj1)
+        public static bool operator<(ThirdEx obj, ThirdEx obj1)
         {
             if (Math.Pow(obj.num1, 2) + Math.Pow(obj.num2, 2) < Math.Pow(obj1.num1, 2) + Math.Pow(obj1.num2, 2)) { return true; }
             return false;
         }
-        public static void ThirdExcs()
+        public static void ThirdExs()
         {
-            ThirdExc A = new ThirdExc(1, 2);
-            ThirdExc B = new ThirdExc(2, 3);
-            ThirdExc C = new ThirdExc(1, 2);
+            ThirdEx A = new ThirdEx(1, 2);
+            ThirdEx B = new ThirdEx(2, 3);
+            ThirdEx C = new ThirdEx(1, 2);
             Console.WriteLine(A>B);
             Console.WriteLine(A<B);
             Console.WriteLine(A>C);
@@ -49,15 +161,15 @@ namespace OverloadingOperators
         }
     }
 
-    class SecondExc
+    class SecondEx
     {
         public int[] arr;
-        public SecondExc(int arrSize)
+        public SecondEx(int arrSize)
         {
             arr = new int[arrSize];            
         }
 
-        public static string operator~(SecondExc obj)
+        public static string operator~(SecondEx obj)
         {
             string txt = "";
             for(int i = 0; i < obj.arr.Length; i++)
@@ -68,7 +180,7 @@ namespace OverloadingOperators
             return txt;
         }
 
-        public static SecondExc operator++(SecondExc obj)
+        public static SecondEx operator++(SecondEx obj)
         {
             int[]temp = new int[obj.arr.Length + 1];
             Array.Copy(obj.arr, temp, obj.arr.Length);
@@ -76,15 +188,15 @@ namespace OverloadingOperators
             return obj;
         }        
 
-        public static SecondExc operator--(SecondExc obj)
+        public static SecondEx operator--(SecondEx obj)
         {   
             Array.Resize(ref obj.arr, obj.arr.Length - 1);
             return obj;
         }
 
-        public static SecondExc operator+(SecondExc obj, SecondExc obj1)
+        public static SecondEx operator+(SecondEx obj, SecondEx obj1)
         {
-            SecondExc result = new SecondExc(obj.arr.Length + obj1.arr.Length);
+            SecondEx result = new SecondEx(obj.arr.Length + obj1.arr.Length);
             int count = 0;
             for(int i = 0; i < obj.arr.Length; i++)
             {
@@ -99,26 +211,26 @@ namespace OverloadingOperators
             return result;
         }
 
-        public static SecondExc operator+(SecondExc obj, int x)
+        public static SecondEx operator+(SecondEx obj, int x)
         {
-            SecondExc result = new SecondExc(obj.arr.Length + 1);
+            SecondEx result = new SecondEx(obj.arr.Length + 1);
             Array.Copy(obj.arr, result.arr, obj.arr.Length);
             result.arr[result.arr.Length-1] = x;
             return result;
         }
 
-        public static SecondExc operator+(int x, SecondExc obj)
+        public static SecondEx operator+(int x, SecondEx obj)
         {
-            SecondExc result = new SecondExc(obj.arr.Length + 1);
+            SecondEx result = new SecondEx(obj.arr.Length + 1);
             Array.Copy(obj.arr, 0, result.arr, 1, obj.arr.Length);
             result.arr[0] = x;
             return result;
         }
 
-        public static void SecondExcs()
+        public static void SecondExs()
         {
-            SecondExc A = new SecondExc(2);
-            SecondExc B = new SecondExc(3);
+            SecondEx A = new SecondEx(2);
+            SecondEx B = new SecondEx(3);
             int number = 7;
             A++;
             B--;
@@ -126,72 +238,72 @@ namespace OverloadingOperators
             Console.WriteLine(showA);
             string showB = ~B;
             Console.WriteLine(showB);
-            SecondExc C = A + number;
+            SecondEx C = A + number;
             Console.WriteLine(~A);
-            SecondExc D = number + B;
-            SecondExc E = C + D;            
+            SecondEx D = number + B;
+            SecondEx E = C + D;            
             string showC = ~C;
             Console.WriteLine(showC);
             string showD = ~D;
             Console.WriteLine(showD);
             string showE = ~E;
             Console.WriteLine(showE);
-            SecondExc E1 = D + C;
+            SecondEx E1 = D + C;
             string showE1 = ~E1;
             Console.WriteLine(showE1);
         }
     }
 
 
-    class FirstExc
+    class FirstEx
     {
         public char symb;
-        public FirstExc (char symb)
+        public FirstEx (char symb)
         {
             this.symb = symb;
         }
 
-        public static FirstExc operator+(FirstExc obj, int x)
+        public static FirstEx operator+(FirstEx obj, int x)
         {
             int temp = obj.symb + x;            
-            return new FirstExc((char)temp);
+            return new FirstEx((char)temp);
         }
 
-        public static FirstExc operator +(int x, FirstExc obj)
+        public static FirstEx operator +(int x, FirstEx obj)
         {
             int temp = obj.symb + x;
-            return new FirstExc((char)temp);
+            return new FirstEx((char)temp);
         }
 
-        public static int operator-(FirstExc obj1, FirstExc obj2)
+        public static int operator-(FirstEx obj1, FirstEx obj2)
         {
             int n = obj1.symb - obj2.symb;
             return n;
         }
 
-        public static FirstExc operator--(FirstExc obj)
+        public static FirstEx operator--(FirstEx obj)
         {
             obj.symb--;
             return obj;
         }
 
-        public static FirstExc operator++(FirstExc obj)
+        public static FirstEx operator++(FirstEx obj)
         {
             obj.symb++;
             return obj;          
         }
 
-        public static void FirstExcs()
+        public static void FirstExs()
         {
-            FirstExc A = new FirstExc('G');
+            FirstEx A = new FirstEx('G');
             Console.WriteLine(A.symb);
             A++;
             Console.WriteLine(A.symb);
-            FirstExc B = new FirstExc('L');
+            FirstEx B = new FirstEx('L');
             Console.WriteLine(B.symb);
             B--;
             Console.WriteLine(B.symb);
-            FirstExc C = new FirstExc('c');
+            FirstEx C = new FirstEx('c');
             Console.WriteLine(C.symb);
             C = B + 4;
             Console.WriteLine(C.symb);
