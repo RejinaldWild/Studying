@@ -16,7 +16,10 @@ namespace OverloadingOperators
             //FourthEx.FourthExs();
             //FifthEx.FifthExs();
             //SixthEx.SixthExs();            
-            SeventhEx.SeventhExs();
+            //SeventhEx.SeventhExs();
+            //EighthEx.EighthExs();
+            //NinthEx.NinthEsx();
+
         }
     }
 

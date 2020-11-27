@@ -8,7 +8,7 @@ namespace OverloadingOperators
 {
     class SeventhEx
     {
-        public string text;
+        private string text;
         public SeventhEx (string txt)
         {
             text = txt;
