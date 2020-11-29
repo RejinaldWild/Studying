@@ -19,7 +19,7 @@ namespace OverloadingOperators
             //SeventhEx.SeventhExs();
             //EighthEx.EighthExs();
             //NinthEx.NinthEsx();
-
+            TenthEx.TenthExs();
         }
     }
 

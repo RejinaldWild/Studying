@@ -49,6 +49,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeventhEx.cs" />
     <Compile Include="SixthEx.cs" />
+    <Compile Include="TenthEx.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
