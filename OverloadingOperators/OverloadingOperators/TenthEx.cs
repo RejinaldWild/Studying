@@ -14,13 +14,18 @@ namespace OverloadingOperators
             this.symb = symb;
         }
         
-        public static TenthEx operator +(TenthEx obj, TenthEx obj1) // ???
-        {
-            TenthEx T = new TenthEx(obj.symb);
+        public static string operator +(TenthEx obj, TenthEx obj1)
+        {            
             string txt = obj.symb.ToString();
-            txt += obj1.symb;
-            return T;
-        }       
+            txt += obj1.symb.ToString();
+            return txt;
+        }
+
+        public static string operator +(string text, TenthEx obj)
+        {
+            text += obj.symb.ToString();
+            return text;
+        }
 
         public static int operator -(TenthEx obj, TenthEx obj1)
         {
@@ -51,9 +56,9 @@ namespace OverloadingOperators
             int num;
             text = A + B;
             Console.WriteLine(text);
-            text += A.symb; // сделать без .symb;
+            text += A;
             Console.WriteLine(text);            
-            B += A;            
+            //B += A;
             Console.WriteLine(B.symb);
             num = A - B;
             Console.WriteLine(num);
