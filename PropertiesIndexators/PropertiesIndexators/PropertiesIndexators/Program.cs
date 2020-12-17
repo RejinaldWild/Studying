@@ -19,7 +19,12 @@ namespace PropertiesIndexators
             //Listing7.ListingFunc();
             //Listing8.ListingFunc();
             //Listing9.ListingFunc();
-            Listing10.ListingFunc();
+            //Listing10.ListingFunc();
+            //Listing11.ListingFunc();
+            //Listing12.ListingFunc();
+            //Listing13.ListingFunc();
+            //Listing14.ListingFunc();
+            Listing15.ListingFunc();
         }
     }
 }

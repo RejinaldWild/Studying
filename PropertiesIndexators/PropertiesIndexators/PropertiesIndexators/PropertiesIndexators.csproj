@@ -45,6 +45,11 @@
   <ItemGroup>
     <Compile Include="Listing1.cs" />
     <Compile Include="Listing10.cs" />
+    <Compile Include="Listing11.cs" />
+    <Compile Include="Listing12.cs" />
+    <Compile Include="Listing13.cs" />
+    <Compile Include="Listing14.cs" />
+    <Compile Include="Listing15.cs" />
     <Compile Include="Listing2.cs" />
     <Compile Include="Listing3.cs" />
     <Compile Include="Listing4.cs" />
