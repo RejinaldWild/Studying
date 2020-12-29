@@ -17,7 +17,10 @@ namespace Inheritage
             //DoL2.DoMain();
 
             //10.3
-            DoL3.DoMain();
+            //DoL3.DoMain();
+
+            //10.4
+            DoL4.DoMain();
         }
     }
 }
