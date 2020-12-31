@@ -20,7 +20,22 @@ namespace Inheritage
             //DoL3.DoMain();
 
             //10.4
-            DoL4.DoMain();
+            //DoL4.DoMain();
+
+            //10.5
+            //DoL5.DoMain();
+
+            //10.6 // что в памяти с Code и new Code?
+            //DoL6.DoMain();
+
+            //10.7 //p557?
+            //DoL7.DoMain();
+
+            //10.8
+            //DoL8.DoMain(); // ? почему ссылка не поменяла значение p561
+
+            //10.9
+
         }
     }
 }
