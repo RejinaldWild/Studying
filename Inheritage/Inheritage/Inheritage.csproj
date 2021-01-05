@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Listing10.cs" />
     <Compile Include="Listing8.cs" />
     <Compile Include="Listing1.cs" />
     <Compile Include="Listing2.cs" />
@@ -51,6 +52,7 @@
     <Compile Include="Listing5.cs" />
     <Compile Include="Listing6.cs" />
     <Compile Include="Listing7.cs" />
+    <Compile Include="Listing9.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

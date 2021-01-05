@@ -46,7 +46,7 @@ namespace Inheritage
             Console.WriteLine();
             A.Set(18);
             A.Code = 44;
-            A.Show();            
+            A.Show();
         }
     }
 }
