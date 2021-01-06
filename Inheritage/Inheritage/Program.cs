@@ -38,7 +38,15 @@ namespace Inheritage
             //DoL9.DoMain();
 
             //10.10
-            DoL10.DoMain();
+            //DoL10.DoMain();
+
+            //ExcMain1.DoMain();
+            //ExcMain2.DoMain();
+            //ExcMain3.DoMain(); //???
+            //ExcMain4.DoMain();
+            //ExcMain5.DoMain();
+            //ExcMain6.DoMain(); //???
+
         }
     }
 }
