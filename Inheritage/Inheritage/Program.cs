@@ -46,6 +46,9 @@ namespace Inheritage
             //ExcMain4.DoMain();
             //ExcMain5.DoMain();
             //ExcMain6.DoMain(); //???
+            //ExcMain7.DoMain(); //???
+            //ExcMain8.DoMain();
+            //ExcMain9.DoMain();
 
         }
     }

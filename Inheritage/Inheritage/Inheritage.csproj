@@ -50,6 +50,8 @@
     <Compile Include="Exc5.cs" />
     <Compile Include="Exc6.cs" />
     <Compile Include="Exc7.cs" />
+    <Compile Include="Exc8.cs" />
+    <Compile Include="Exc9.cs" />
     <Compile Include="Listing10.cs" />
     <Compile Include="Listing8.cs" />
     <Compile Include="Listing1.cs" />
