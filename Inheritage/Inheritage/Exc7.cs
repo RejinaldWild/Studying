@@ -13,10 +13,9 @@ namespace Inheritage
         {
             Text = txt;
         }
-        public virtual Exc71 Method(Exc7 obj)
+        public virtual Exc71 Method()
         {
-            Exc71 Temp = new Exc71(obj.Text, '+');
-            return Temp;
+            return new Exc71("Bax", '+');
         }
     }
 
@@ -27,10 +26,9 @@ namespace Inheritage
         {
             Symb = b;
         }
-        public override Exc71 Method(Exc7 obj)
+        public override Exc71 Method()
         {
-            obj = base.Method(obj);
-            return (Exc71)obj;
+            return new Exc71(Text, Symb);
         }
     }
 
@@ -38,7 +36,9 @@ namespace Inheritage
     {
         public static void DoMain()
         {
-
+            Exc7 obj1 = new Exc71("Da", 'R');
+            Exc7 obj2 = obj1.Method();
+            Exc7 obj3 = obj2;
         }
     }
 }

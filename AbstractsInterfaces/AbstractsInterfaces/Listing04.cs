@@ -6,36 +6,46 @@ using System.Threading.Tasks;
 
 namespace AbstractsInterfaces
 {
-    interface MyInterfaceL3
+    internal abstract class Base04
     {
-        void Show();
-        void SetNum(int n);
-        int GetNum();
-        int Number { get; set; }
-        int this[int k] { get; }
-    }
-
-    internal class MyClassL3 : MyInterfaceL3
-    {
-        private int Num;
-        public MyClassL3(int n)
+        public abstract int Number { get; set; }
+        public Base04(int n)
         {
             Number = n;
             Show();
         }
         public void Show()
         {
-            Console.WriteLine("Prop Number = "+ Number);
+            Console.WriteLine("Prop Number = "+Number);
+        }
+    }
+
+    interface IFirstL4
+    {
+        void SetNum(int n);
+        int GetNum();
+    }
+    interface ISecondL4
+    {
+        int this[int k]
+        {
+            get;
+        }
+    }
+
+    internal class MyClassL4 : Base04, IFirstL4, ISecondL4
+    {
+        private int Num;
+        public MyClassL4(int n) : base(n) { }
+        public void SetNum(int n)
+        {
+            Num = n;
         }
         public int GetNum()
         {
             return Num;
         }
-        public void SetNum(int n)
-        {
-            Num = n;
-        }
-        public int Number
+        public override int Number
         {
             get
             {
@@ -46,29 +56,29 @@ namespace AbstractsInterfaces
                 SetNum(value);
             }
         }
-        public int this[int k]
+        public int this [int k]
         {
             get
             {
                 int r = Number;
-                for(int i = 0; i < k; i++)
+                for (int i=0; i < k; i++)
                 {
                     r /= 10;
                 }
                 return r % 10;
-            }            
+            }
         }
     }
 
-    internal class InterfaceDemo
+    internal class MoreInterfaceDemo
     {
-        public static void Main03()
+        public static void Main04()
         {
             int m = 9;
-            MyClassL3 Obj1 = new MyClassL3(12345);
+            MyClassL4 Obj = new MyClassL4(12345);
             for(int i = 0; i <= m; i++)
             {
-                Console.Write("|"+Obj1[m-i]);
+                Console.Write("|" + Obj[m-i]);
             }
             Console.WriteLine("|");
         }

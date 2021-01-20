@@ -12,7 +12,12 @@ namespace AbstractsInterfaces
         {
             //AbstractDemo.Main01();
             //AbstrPropAndIndex.Main02();
-            InterfaceDemo.Main03();
+            //InterfaceDemo.Main03();
+            //MoreInterfaceDemo.Main04();
+            //InterfaceDemoL5.Main05();
+            //InterfaceVarDemo.Main06();
+            //ImpInterfaceDemo.Main07();
+            ExplInterfaceDemo.Main08();
         }
     }
 }

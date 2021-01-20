@@ -47,7 +47,7 @@ namespace Inheritage
                 ArrSymb[i] = (char)('a'+i);
             }
         }
-        public char this [int k] //???
+        new public char this [int k] //???
         {
             get
             {
@@ -101,7 +101,6 @@ namespace Inheritage
             ObjA[1] = 'R';
             Console.WriteLine(ObjA[1]);
             ObjA.ShowArrays();
-            Console.WriteLine(ObjA.GetLenght);
         }
     }
 }

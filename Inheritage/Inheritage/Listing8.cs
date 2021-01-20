@@ -52,7 +52,7 @@ namespace Inheritage
             B.Show();
             Console.WriteLine("After A=B");
             A = B;
-            Console.WriteLine("A.Hello():"); // ???
+            Console.WriteLine("A.Hello():");
             A.Hello();
             Console.WriteLine("A.Hi():");
             A.Hi();

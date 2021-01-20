@@ -25,14 +25,14 @@ namespace Inheritage
             //10.5
             //DoL5.DoMain();
 
-            //10.6 // что в памяти с Code и new Code?
+            //10.6
             //DoL6.DoMain();
 
-            //10.7 //p557 не тип переменной, а класс объекта?
+            //10.7
             //DoL7.DoMain();
 
             //10.8
-            //DoL8.DoMain(); // ? почему ссылка не поменяла значение p561
+            //DoL8.DoMain();
 
             //10.9
             //DoL9.DoMain();
@@ -42,14 +42,14 @@ namespace Inheritage
 
             //ExcMain1.DoMain();
             //ExcMain2.DoMain();
-            //ExcMain3.DoMain(); //???
+            //ExcMain3.DoMain();
             //ExcMain4.DoMain();
             //ExcMain5.DoMain();
-            //ExcMain6.DoMain(); //???
-            //ExcMain7.DoMain(); //???
+            //ExcMain6.DoMain();
+            //ExcMain7.DoMain(); 
             //ExcMain8.DoMain();
             //ExcMain9.DoMain();
-            //ExcMain10.DoMain(); //???
+            //ExcMain10.DoMain();
         }
     }
 }

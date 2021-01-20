@@ -11,7 +11,8 @@ namespace Inheritage
         public int[] Arr;
         public Exc3( int[] arr)
         {            
-            Arr = arr;
+            Arr = new int[arr.Length];
+            Array.Copy(arr, Arr, arr.Length);
         }
 
         public override string ToString()
@@ -30,7 +31,8 @@ namespace Inheritage
         public char[] ArrChar;
         public Exc31( int[] arr, char[] arr1) : base(arr)
         {   
-            ArrChar = arr1;
+            ArrChar = new char[arr1.Length];
+            Array.Copy(arr1, ArrChar, arr1.Length);
         }
 
         public override string ToString()

@@ -46,6 +46,11 @@
     <Compile Include="Listing01.cs" />
     <Compile Include="Listing02.cs" />
     <Compile Include="Listing03.cs" />
+    <Compile Include="Listing04.cs" />
+    <Compile Include="Listing05.cs" />
+    <Compile Include="Listing06.cs" />
+    <Compile Include="Listing07.cs" />
+    <Compile Include="Listing08.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

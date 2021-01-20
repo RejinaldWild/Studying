@@ -11,7 +11,7 @@ namespace Inheritage
         public int Code;
         public void Show()
         {
-            Console.WriteLine("Class Base2: "+Code);
+            Console.WriteLine("Class Base2: " + Code);
         }
         public Base2(int n)
         {

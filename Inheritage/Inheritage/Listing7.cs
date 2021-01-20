@@ -29,7 +29,7 @@ namespace Inheritage
         public override void Show()
         {
             Console.WriteLine("Class Bravo1: {0} and {1}",Alpha, Bravo);
-        }
+        }        
     }
 
     internal class Charlie1 : Bravo1
@@ -41,8 +41,9 @@ namespace Inheritage
         }
         public override void Show()
         {
-            Console.WriteLine("Class Charlie: {0}, {1} and {2}", Alpha, Bravo, Charlie);
+            Console.WriteLine("Class Charlie: {0}, {1} and {2}", Alpha, Bravo, Charlie);            
         }
+
     }
 
     internal class DoL7
@@ -63,6 +64,7 @@ namespace Inheritage
             ObjA.Show();
             ObjB.Show();
             ObjC.Show();
+
         }
     }
 }
