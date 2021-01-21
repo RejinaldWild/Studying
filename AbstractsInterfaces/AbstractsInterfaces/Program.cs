@@ -17,7 +17,11 @@ namespace AbstractsInterfaces
             //InterfaceDemoL5.Main05();
             //InterfaceVarDemo.Main06();
             //ImpInterfaceDemo.Main07();
-            ExplInterfaceDemo.Main08();
+            //ExplInterfaceDemo.Main08();
+            //Exc01.Main01();
+            //Exc02.Main02();
+            //Exc03.Main03();
+
         }
     }
 }

@@ -40,6 +40,7 @@ namespace AbstractsInterfaces
         {
             get { return (char)(Smb + 1); }
         }
+
         public override int this[int k]
         {
             get { return (char)(Smb + k); }
@@ -49,10 +50,10 @@ namespace AbstractsInterfaces
         {
             get { return Smb - k; }
         }
-        
+
         public override void Show()
         {
-            Console.WriteLine("Base class :\t\'{0}\'",Symbol);
+            Console.WriteLine("Base class :\t\'{0}\'", Symbol);
         }
         void IFirstL8.Show()
         {
