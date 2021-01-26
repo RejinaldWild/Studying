@@ -21,6 +21,12 @@ namespace AbstractsInterfaces
             //Exc01.Main01();
             //Exc02.Main02();
             //Exc03.Main03();
+            //Exc04.Main04();
+            //Exc05.Main05();
+            //Exc06.Main06();
+            //Exc07.Main07();
+            //Exc08.Main08();
+            //Exc09.Main09();
 
         }
     }
