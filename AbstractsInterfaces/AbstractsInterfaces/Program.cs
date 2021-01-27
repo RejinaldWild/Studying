@@ -27,7 +27,7 @@ namespace AbstractsInterfaces
             //Exc07.Main07();
             //Exc08.Main08();
             //Exc09.Main09();
-
+            Exc10.Main10();
         }
     }
 }

@@ -55,7 +55,14 @@ namespace AbstractsInterfaces
     {
         public static void Main09()
         {
-
+            MyClassExc09 A = new MyClassExc09("Hello RejiNiceDayToLearn;)");
+            Console.WriteLine(A.GetSymb(13)); // e
+            A.SetElem(4, 'K');
+            Console.WriteLine(A.GetSymb(4)); // K
+            A.SetElem("Ahahaha");
+            Console.WriteLine(A[4]); // a
+            A[4] = 'R';
+            Console.WriteLine(A[4]); // R
         }
     }
 }
