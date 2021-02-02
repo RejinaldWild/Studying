@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace DelegatesAndEvents
 {
     delegate void MyDelegate02();
-    internal class MyClass02
+    internal class MyClassL2
     {
         public string Name;
-        public MyClass02(string txt)
+        public MyClassL2(string txt)
         {
             Name = txt;
         }
@@ -30,9 +30,9 @@ namespace DelegatesAndEvents
         {
             public static void Main02()
             {
-                MyClass02 A = new MyClass02("Object A");
-                MyClass02 B = new MyClass02("Object B");
-                MyClass02 C = new MyClass02("Object C");
+                MyClassL2 A = new MyClassL2("Object A");
+                MyClassL2 B = new MyClassL2("Object B");
+                MyClassL2 C = new MyClassL2("Object C");
                 MyDelegate02 Method = A.Show;
                 Method();
                 Method = MakeLine;

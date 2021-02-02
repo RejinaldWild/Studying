@@ -11,7 +11,11 @@ namespace DelegatesAndEvents
         static void Main(string[] args)
         {
             //DelegateDemo.Listing01.Main01();
-            MulticastDemo.Listing02.Main02();
+            //MulticastDemo.Listing02.Main02();
+            //DelegateAsFieldDemo.Listing03.Main03();
+            //DelegateAsArgDemo.Listing04.Main04();
+            //DelegateAsResDemo.Listing05.Main05();
+            MethAndObjRefsDemo.Listing06.Main06();
         }
     }
 }
