@@ -15,7 +15,10 @@ namespace DelegatesAndEvents
             //DelegateAsFieldDemo.Listing03.Main03();
             //DelegateAsArgDemo.Listing04.Main04();
             //DelegateAsResDemo.Listing05.Main05();
-            MethAndObjRefsDemo.Listing06.Main06();
+            //MethAndObjRefsDemo.Listing06.Main06();
+            //AnonymousMethDemo.Listing07.Main07();
+            //AnonymMethAsArgDemo.Listing08.Main08(); //???
+            AnonymAsResultDemo.Listing09.Main09();
         }
     }
 }
