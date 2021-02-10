@@ -52,6 +52,7 @@
     <Compile Include="Listing07.cs" />
     <Compile Include="Listing08.cs" />
     <Compile Include="Listing09.cs" />
+    <Compile Include="Listing10.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

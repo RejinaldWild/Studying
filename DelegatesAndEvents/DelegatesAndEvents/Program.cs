@@ -18,7 +18,8 @@ namespace DelegatesAndEvents
             //MethAndObjRefsDemo.Listing06.Main06();
             //AnonymousMethDemo.Listing07.Main07();
             //AnonymMethAsArgDemo.Listing08.Main08(); //???
-            AnonymAsResultDemo.Listing09.Main09();
+            //AnonymAsResultDemo.Listing09.Main09();
+            MoreAnonymAsResultDemo.Listing10.Main10();
         }
     }
 }
