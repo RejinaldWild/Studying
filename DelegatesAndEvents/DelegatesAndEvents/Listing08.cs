@@ -29,7 +29,7 @@ namespace DelegatesAndEvents
         {
             public static void Main08()
             {
-                MyClassL8 Obj = new MyClassL8('K',//???
+                MyClassL8 Obj = new MyClassL8('K',
                     delegate (int n)
                     {
                         return (char)('A' + n);
