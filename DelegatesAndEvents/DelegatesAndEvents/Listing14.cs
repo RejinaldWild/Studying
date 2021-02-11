@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace DelegatesAndEvents
 {
     delegate double PowersL(double x);
-
+    
     internal class MoreLambdaAsResultDemo
     {
         static PowersL Maker(int n)
@@ -21,9 +21,9 @@ namespace DelegatesAndEvents
                     s *= x;
                 }
                 return s;
-            };           
+            };
             //    delegate (double x)
-            //{
+            //    {
             //    double s = 1;
             //    for (int i = 1; i <= n; i++)
             //    {

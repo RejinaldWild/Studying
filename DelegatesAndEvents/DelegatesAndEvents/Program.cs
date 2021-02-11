@@ -24,7 +24,7 @@ namespace DelegatesAndEvents
             //LambdaAsArgDemo.Listing12.Main12();
             //LambdaAsResultDemo.Listing13.Main13();
             //MoreLambdaAsResultDemo.Listing14.Main14();
-            MoreLambdaDemo.Listing15.Main15();
+            //MoreLambdaDemo.Listing15.Main15();
         }
     }
 }
