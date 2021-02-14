@@ -58,6 +58,8 @@
     <Compile Include="Listing13.cs" />
     <Compile Include="Listing14.cs" />
     <Compile Include="Listing15.cs" />
+    <Compile Include="Listing16.cs" />
+    <Compile Include="Listing17.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

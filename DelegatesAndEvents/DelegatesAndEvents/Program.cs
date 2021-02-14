@@ -17,7 +17,7 @@ namespace DelegatesAndEvents
             //DelegateAsResDemo.Listing05.Main05();
             //MethAndObjRefsDemo.Listing06.Main06();
             //AnonymousMethDemo.Listing07.Main07();
-            //AnonymMethAsArgDemo.Listing08.Main08(); //???
+            //AnonymMethAsArgDemo.Listing08.Main08();
             //AnonymAsResultDemo.Listing09.Main09();
             //MoreAnonymAsResultDemo.Listing10.Main10();
             //LambdaDemo.Listing11.Main11();
@@ -25,6 +25,8 @@ namespace DelegatesAndEvents
             //LambdaAsResultDemo.Listing13.Main13();
             //MoreLambdaAsResultDemo.Listing14.Main14();
             //MoreLambdaDemo.Listing15.Main15();
+            //Listing16.Main16();
+            //EventDemo.Listing17.Main17();
         }
     }
 }
