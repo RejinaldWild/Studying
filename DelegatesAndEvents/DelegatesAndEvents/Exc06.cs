@@ -12,36 +12,40 @@ namespace DelegatesAndEvents
     {
         public static void MainExc06()
         {
-            int count = 0;
+            string[] arrDays = new string[] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
+            int count = -1;
             DExc06 DayOfWeek = () =>
-            {   
-                int i = count % 7;
-                switch (i)
-                {
-                    case 0:
-                        count++;
-                        return "Monday";
-                    case 1:
-                        count++;
-                        return "Tuesday";
-                    case 2:
-                        count++;
-                        return "Wednesday";
-                    case 3:
-                        count++;
-                        return "Thuersday";
-                    case 4:
-                        count++;
-                        return "Friday";
-                    case 5:
-                        count++;
-                        return "Saturday";
-                    case 6:
-                        count++;
-                        return "Sunday";
-                    default:
-                        return "";
-                }
+            {
+                count++;
+                return arrDays[count%arrDays.Length];
+                
+                //int i = count % 7;
+                //switch (i)
+                //{
+                //    case 0:
+                //        count++;
+                //        return "Monday";
+                //    case 1:
+                //        count++;
+                //        return "Tuesday";
+                //    case 2:
+                //        count++;
+                //        return "Wednesday";
+                //    case 3:
+                //        count++;
+                //        return "Thuersday";
+                //    case 4:
+                //        count++;
+                //        return "Friday";
+                //    case 5:
+                //        count++;
+                //        return "Saturday";
+                //    case 6:
+                //        count++;
+                //        return "Sunday";
+                //    default:
+                //        return "";
+                //}
             };
 
             for(int i = 0; i < 12; i++)

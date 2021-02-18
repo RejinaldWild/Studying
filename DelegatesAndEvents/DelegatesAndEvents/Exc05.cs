@@ -12,15 +12,17 @@ namespace DelegatesAndEvents
     {
         public static void MainExc05()
         {
-            int a = 0;
+            int a = -1;
             int b = 1;
             DExc05 Fib = () =>
             {
                 int c = a + b;
                 a = b;
                 b = c;
-                if (a == 1)
-                {   
+                if (c == 0)
+                {
+                    a = 0;
+                    b = 1;
                     return 1;
                 }
                 return c;
