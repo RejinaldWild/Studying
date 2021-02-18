@@ -23,15 +23,17 @@ namespace DelegatesAndEvents
         {
             int n = 4;
             MyClassExc02[] ArrObj = new MyClassExc02[n];
-            for (int i = 0; i < n; i++)
-            {
-                ArrObj[i] = new MyClassExc02();
-            }
-            DExc02 Md = ArrObj[0].SetSymb;
-            Md += ArrObj[1].SetSymb;
-            Md += ArrObj[2].SetSymb;
-            Md += ArrObj[3].SetSymb;
-            Md('a');
+            ////DExc02 Md=new DExc02;
+            //for (int i = 0; i < n; i++)
+            //{
+            //    ArrObj[i] = new MyClassExc02();
+            //    Md += ArrObj[i].SetSymb;
+            //}
+            ////Md = ArrObj[0].SetSymb;
+            ////Md += ArrObj[1].SetSymb;
+            ////Md += ArrObj[2].SetSymb;
+            ////Md += ArrObj[3].SetSymb;
+            //Md('a');
         }
     }
 }

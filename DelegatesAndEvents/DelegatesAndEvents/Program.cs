@@ -28,9 +28,15 @@ namespace DelegatesAndEvents
             //Listing16.Main16();
             //EventDemo.Listing17.Main17();
             //Exc01.MainExc01();
-            //Exc02.MainExc02();    //???
-            //Exc03.MainExc03();    //???
-            Exc04.MainExc04();
+            //Exc02.MainExc02();    //? refac
+            //Exc03.MainExc03();    
+            //Exc04.MainExc04();
+            //Exc05.MainExc05();    //? logic
+            //Exc06.MainExc06();    //? array
+            //Exc07.MainExc07();    
+            //Exc08.MainExc08();    // delegate + Func
+            //Exc09.MainExc09();
+            //Exc10.MainExc10();    
         }
     }
 }

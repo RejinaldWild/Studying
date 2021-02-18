@@ -31,6 +31,12 @@ namespace DelegatesAndEvents
         {
             MyClassExc03 A = new MyClassExc03("OMFG!", true);
             MyClassExc03 B = new MyClassExc03("OMFG!", false);
+
+            DExc03 Del = A.PropMd;
+
+            Console.WriteLine(Del());
+            Console.WriteLine(Del);
+            Console.WriteLine(B.PropMd());
         }
     }
 }
