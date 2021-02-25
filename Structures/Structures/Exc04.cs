@@ -19,21 +19,49 @@ namespace Structures
             }
         }
 
-        public int Min()
+        public int FindMin()
         {
-            int min = 13;
+            int min=ArrNum[0];
             for(int i=0; i<ArrNum.Length-1; i++)
             {
-                if (ArrNum[i] > ArrNum[i + 1])
+                if (min > ArrNum[i])
                 {
-                    min = ArrNum[i+1];
+                    min = ArrNum[i];
                 }
             }
-            if (ArrNum[ArrNum.Length - 1] > ArrNum[ArrNum.Length])
-            {
-                min = ArrNum[ArrNum.Length];
-            }
             return min;
+        }
+
+        public int FindMax()
+        {
+            int max = ArrNum[0];
+            for(int i=0; i < ArrNum.Length - 1; i++)
+            {
+                if (max < ArrNum[i])
+                {
+                    max = ArrNum[i];
+                }
+            }
+            return max;
+        }
+
+        public double FindAverage()
+        {
+            double avrg = 0.0;
+            for(int i = 0; i < ArrNum.Length; i++)
+            {
+                avrg += ArrNum[i];
+            }
+            return avrg/ArrNum.Length;
+        }
+
+        public void ShowArray()
+        {
+            for (int i = 0; i < ArrNum.Length; i++)
+            {
+                Console.Write("|"+ArrNum[i]+"|");
+            }
+            Console.WriteLine();
         }
     }
 
@@ -41,7 +69,11 @@ namespace Structures
     {
         public static void MainExc04()
         {
-
+            StrExc04 RandomArr = new StrExc04(5);
+            RandomArr.ShowArray();
+            Console.WriteLine(RandomArr.FindMax());
+            Console.WriteLine(RandomArr.FindMin());
+            Console.WriteLine(RandomArr.FindAverage());            
         }
     }
 }
