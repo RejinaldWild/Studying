@@ -16,6 +16,10 @@ namespace Structures
             //Exc04.MainExc04();
             //Exc05.MainExc05();
             //Exc06.MainExc06();
+            //Exc07.MainExc07();
+            //Exc08.MainExc08();
+            //Exc09.MainExc09();
+            //Exc10.MainExc10();
         }
     }
 }
