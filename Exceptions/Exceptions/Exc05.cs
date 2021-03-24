@@ -11,14 +11,15 @@ namespace Exceptions
         public static int FindIndex(int[] arr, int number)
         {
             int index=0;
-            for(int i = 0; i<arr.Length; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
                 if (arr[i] == number)
                 {
                     index = i;
+                    return index;
                 }
             }
-            return index;
+            throw new OverflowException();          
         }
 
         public static void MainExc05()
@@ -30,9 +31,22 @@ namespace Exceptions
                 Console.Write(item + "\t");
             }
             Console.WriteLine();
-            int number = Int32.Parse(Console.ReadLine());
-            Console.WriteLine(FindIndex(array, number));
-
+            try
+            {
+                try
+                {
+                    int number = Int32.Parse(Console.ReadLine());
+                    Console.WriteLine(FindIndex(array, number));
+                }
+                catch(FormatException e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+            }
+            catch (OverflowException e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
     }
 }
