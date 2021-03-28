@@ -51,6 +51,8 @@
     <Compile Include="Exc06.cs" />
     <Compile Include="Exc07.cs" />
     <Compile Include="Exc08.cs" />
+    <Compile Include="Exc09.cs" />
+    <Compile Include="Exc10.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
