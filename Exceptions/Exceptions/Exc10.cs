@@ -23,7 +23,8 @@ namespace Exceptions
             {
                 try
                 {
-                    checked { arrByte[i] = (byte)value; }
+                    checked
+                    { arrByte[i] = (byte)value; }
                 }
                 catch (OverflowException)
                 {
@@ -40,9 +41,9 @@ namespace Exceptions
         {
             MyClass10 A = new MyClass10(8);
             A[0] = 1;
+            A[1] = 600;
             A[2] = 7;
             A[5] = -1;
-            A[1] = 600;
             foreach(byte item in A.arrByte)
             {
                 Console.Write(item + "\t");

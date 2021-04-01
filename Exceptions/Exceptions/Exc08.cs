@@ -14,7 +14,7 @@ namespace Exceptions
             symbArr = new char[size];
             for(int i = 0; i<symbArr.Length; i++)
             {
-                symbArr[i] = Convert.ToChar(65+i);
+                symbArr[i] = Convert.ToChar('A'+i);
             }
         }
     }
@@ -22,22 +22,21 @@ namespace Exceptions
     class Exc08
     {
         public static void MainExc08()
-        {
-            MyClass08 Mistake = new MyClass08(4);
+        {   
             try
             {
-                foreach(char item in Mistake.symbArr)
+                throw new MyClass08(4);
+            }
+            catch(MyClass08 e)
+            {
+                foreach (char item in e.symbArr)
                 {
                     Console.Write(item + "\t");
                 }
                 Console.WriteLine();
-                throw Mistake;
-            }
-            catch(MyClass08)
-            {
-                Console.WriteLine(Mistake.Source);
-                Console.WriteLine(Mistake.Message);                
-                Console.WriteLine(Mistake.StackTrace);
+                Console.WriteLine(e.Source);
+                Console.WriteLine(e.Message);                
+                Console.WriteLine(e.StackTrace);
             }
         }
     }

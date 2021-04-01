@@ -29,26 +29,29 @@ namespace Exceptions
         {
             arrChar = new char[size];
         }
+
+        public void CheckIndex(int i)
+        {
+            if (i > arrChar.Length - 1)
+            {
+                throw new CommonMistake();
+            }
+            else if (i < 0)
+            {
+                throw new MyMistake();
+            }
+        }
+
         public char this[int i]
         {
             get
             {
-                if (i > arrChar.Length - 1)
-                {
-                    throw new CommonMistake();
-                }
+                CheckIndex(i);
                 return arrChar[i];
             }
             set
             {
-                if (i > arrChar.Length - 1)
-                {
-                    throw new CommonMistake();
-                }
-                else if (i < arrChar[0])
-                {
-                    throw new MyMistake();
-                }
+                CheckIndex(i);
                 arrChar[i] = value;
             }
         }
