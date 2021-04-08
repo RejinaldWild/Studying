@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Generics
 {
-    class Exc01
+    internal class Exc01
     {        
         static void ChangeValues<T>(T a, T b)
         {
