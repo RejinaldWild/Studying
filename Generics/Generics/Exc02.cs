@@ -10,11 +10,11 @@ namespace Generics
     {
         static void CircleElement<T>(T[] arr)
         {
-            int n = 1;
-            for (int i = 0; i <=n; i++)
-            {
-                Array.Reverse(arr, i, arr.Length - i);
-            }
+            int n = 4;
+            Array.Reverse(arr, 0, arr.Length);
+            Array.Reverse(arr, n, arr.Length-n);
+            Array.Reverse(arr,0,n);
+
             foreach (T item in arr)
             {
                 Console.Write(" | " + item);
