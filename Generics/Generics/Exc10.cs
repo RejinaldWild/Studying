@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Generics
 {
-    internal class MyClassExc10 <T, U>
+    internal class MyClassExc10 <U,T>
     {
         T[] TArr;
         U[] UArr;
-        int index;
+        int Index;
         public MyClassExc10(int size)
         {
             TArr = new T[size];
@@ -20,36 +20,23 @@ namespace Generics
         {
             get
             {
-                try
+                for (int i = 0; i < UArr.Length; i++)
                 {
-                    for (int i = 0; i < UArr.Length; i++)
+                    if (k.Equals(UArr[i]))
                     {
-                        if (k.Equals(UArr[i]))
-                        {
-                            index--;
-                            return TArr[i];
-                        }
+                        Index--;    // RemoveMethod
+                        return TArr[i];
                     }
-                    throw new KeyNotFoundException("Wrong key value!");
                 }
-                catch (KeyNotFoundException e)
-                {
-                    Console.WriteLine(e.Message);                   
-                }
-                catch(Exception e)
-                {
-                    Console.WriteLine(e.Message);
-                }
-                
-                return TArr[0]; //???
+                throw new KeyNotFoundException("Wrong key value!");                
             }
             set
             {
-                if (index == 0)
+                if (Index == 0)     //(Index == TArr.Length)
                 {
-                    UArr[index] = k;
-                    TArr[index] = value;
-                    index = 1;
+                    UArr[Index] = k;
+                    TArr[Index] = value;
+                    Index = 1;
                 }
 
                 for(int i = 0; i < TArr.Length; i++)
@@ -57,25 +44,25 @@ namespace Generics
                     if (k.Equals(UArr[i]))
                     {
                         TArr[i] = value;
-                        index--;
+                        Index--;
                     }
                 }
 
-                if (index == TArr.Length)
+                if (Index == TArr.Length)
                 {
-                    T[]TArrNew = new T[index+1];
-                    U[]UArrNew = new U[index+1];
+                    T[]tArrNew = new T[Index+1];
+                    U[]uArrNew = new U[Index+1];
                     for(int i = 0; i < TArr.Length; i++)
                     {
-                        TArrNew[i] = TArr[i];
-                        UArrNew[i] = UArr[i];
+                        tArrNew[i] = TArr[i];
+                        uArrNew[i] = UArr[i];
                     }
-                    TArr = TArrNew;
-                    UArr = UArrNew;
-                    UArr[index] = k;
-                    TArr[index] = value;
+                    TArr = tArrNew;
+                    UArr = uArrNew;
+                    UArr[Index] = k;
+                    TArr[Index] = value;
                 }
-                index++;
+                Index++;
             }
         }
 
@@ -85,20 +72,26 @@ namespace Generics
     {
         public static void MainExc10()
         {
-            MyClassExc10<int,char> A = new MyClassExc10<int,char>(1);
+            MyClassExc10<char,int> A = new MyClassExc10<char,int>(1);
             A['R'] = 2;
             Console.WriteLine(A['R']);
             A['M'] = 63;
             A['D'] = 13;
             A['M'] = 8;
-            Console.WriteLine(A['R']);
-            Console.WriteLine(A['V']);
+            try
+            {
+                Console.WriteLine(A['R']);
+                Console.WriteLine(A['V']);
+            }
+            catch(KeyNotFoundException e)
+            {
+                Console.WriteLine(e.Message); 
+            }
             A['S'] = 84;
             A['V'] = 79;
             A['R'] = 96;
             A['C'] = 18;
             Console.WriteLine(A['V']);
-            
         }
     }
 }
