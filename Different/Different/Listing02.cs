@@ -7,7 +7,7 @@ using static System.Console;
 
 namespace First
 {
-    class MyClass
+    internal class MyClass
     {
         public int Num;
         public MyClass(int n)
@@ -22,7 +22,7 @@ namespace First
 }
 namespace Second
 {
-    class MyClass
+    internal class MyClass
     {
         public string Txt;
         public MyClass(string t)
@@ -37,7 +37,7 @@ namespace Second
 }
 namespace Different
 {
-    class Listing02
+    internal class Listing02
     {
         public static void MainListing02()
         {

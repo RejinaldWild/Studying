@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Different
 {
-    class Listing04
+    internal class Listing04
     {
         public static void MainListing04()
         {

@@ -8,7 +8,7 @@ using myclass = Second.MyClass;
 
 namespace Different
 {
-    class Listing03
+    internal class Listing03
     {
         public static void MainListing03()
         {

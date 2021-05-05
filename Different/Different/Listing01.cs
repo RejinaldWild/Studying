@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace Different
 {
-    class Listing01
+    internal class Listing01
     {
         public static void MainListing01()
         {
