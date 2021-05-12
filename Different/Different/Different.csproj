@@ -52,6 +52,11 @@
     <Compile Include="Exc03.cs" />
     <Compile Include="Exc04.cs" />
     <Compile Include="Exc05.cs" />
+    <Compile Include="Exc06.cs" />
+    <Compile Include="Exc07.cs" />
+    <Compile Include="Exc08.cs" />
+    <Compile Include="Exc09.cs" />
+    <Compile Include="Exc10.cs" />
     <Compile Include="Listing01.cs" />
     <Compile Include="Listing02.cs" />
     <Compile Include="Listing03.cs" />

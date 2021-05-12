@@ -24,7 +24,7 @@ namespace Different
                 FileStream fout = new FileStream(F, FileMode.Create);
                 Console.WriteLine("New file: \"{0}\"",F);
 
-                //fin.CopyTo(fout); start
+                //fin.CopyTo(fout);// start
                 int val = fin.ReadByte();           
                 while (val != -1)
                 {
