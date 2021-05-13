@@ -32,13 +32,6 @@ namespace Generics
             }
             set
             {
-                if (Index == 0)     //(Index == TArr.Length)
-                {
-                    UArr[Index] = k;
-                    TArr[Index] = value;
-                    Index = 1;
-                }
-
                 for(int i = 0; i < TArr.Length; i++)
                 {
                     if (k.Equals(UArr[i]))
@@ -48,7 +41,7 @@ namespace Generics
                     }
                 }
 
-                if (Index == TArr.Length)
+                if (Index == TArr.Length || Index == 0)
                 {
                     T[]tArrNew = new T[Index+1];
                     U[]uArrNew = new U[Index+1];
@@ -60,7 +53,7 @@ namespace Generics
                     TArr = tArrNew;
                     UArr = uArrNew;
                     UArr[Index] = k;
-                    TArr[Index] = value;
+                    TArr[Index] = value;                    
                 }
                 Index++;
             }
