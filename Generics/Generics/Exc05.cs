@@ -24,7 +24,7 @@ namespace Generics
         
         public void Add(T data)
         {
-            MyClassExc05 <T> Node =new MyClassExc05<T>(data);
+            MyClassExc05 <T> Node = new MyClassExc05<T>(data);
             if (Head == null)
             {
                 Head = Node;
@@ -52,17 +52,7 @@ namespace Generics
                     Console.WriteLine(true);
                     return true;
                 }
-                else
-                {
-                    if (Current == Tail)
-                    {
-                        Current = null;
-                    }
-                    else
-                    {
-                        Current = Head.Next;
-                    }                    
-                }
+                Current = Current.Next;
             }
             Console.WriteLine(false);
             return false;
