@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A639B81B-522C-49A0-9C75-C765C8F8392A}</ProjectGuid>
+    <ProjectGuid>{3A64E751-EC12-4C14-9B48-450FDF4C322D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DelegatesAndEvents</RootNamespace>
-    <AssemblyName>DelegatesAndEvents</AssemblyName>
+    <RootNamespace>Structures</RootNamespace>
+    <AssemblyName>Structures</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -53,23 +53,6 @@
     <Compile Include="Exc08.cs" />
     <Compile Include="Exc09.cs" />
     <Compile Include="Exc10.cs" />
-    <Compile Include="Listing01.cs" />
-    <Compile Include="Listing02.cs" />
-    <Compile Include="Listing03.cs" />
-    <Compile Include="Listing04.cs" />
-    <Compile Include="Listing05.cs" />
-    <Compile Include="Listing06.cs" />
-    <Compile Include="Listing07.cs" />
-    <Compile Include="Listing08.cs" />
-    <Compile Include="Listing09.cs" />
-    <Compile Include="Listing10.cs" />
-    <Compile Include="Listing11.cs" />
-    <Compile Include="Listing12.cs" />
-    <Compile Include="Listing13.cs" />
-    <Compile Include="Listing14.cs" />
-    <Compile Include="Listing15.cs" />
-    <Compile Include="Listing16.cs" />
-    <Compile Include="Listing17.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

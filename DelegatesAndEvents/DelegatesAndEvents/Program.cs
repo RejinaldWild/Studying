@@ -27,6 +27,16 @@ namespace DelegatesAndEvents
             //MoreLambdaDemo.Listing15.Main15();
             //Listing16.Main16();
             //EventDemo.Listing17.Main17();
+            //Exc01.MainExc01();
+            //Exc02.MainExc02();    
+            //Exc03.MainExc03();    
+            //Exc04.MainExc04();
+            //Exc05.MainExc05();    
+            //Exc06.MainExc06();    
+            //Exc07.MainExc07();    
+            //Exc08.MainExc08();    
+            //Exc09.MainExc09();
+            //Exc10.MainExc10();    
         }
     }
 }
