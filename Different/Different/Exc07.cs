@@ -38,7 +38,7 @@ namespace Different
                 BinaryReader fileBReader = new BinaryReader(new FileStream(path, FileMode.Open));
                 Console.WriteLine(fileBReader.ReadString());
                 Console.WriteLine(fileBReader.ReadChar());
-                Console.WriteLine(fileBReader.ReadInt32());                
+                Console.WriteLine(fileBReader.ReadInt32());
                 fileBReader.Close();
             }
             catch (Exception e)

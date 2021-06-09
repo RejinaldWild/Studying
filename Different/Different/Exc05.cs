@@ -6,30 +6,13 @@ using System.Threading.Tasks;
 
 namespace Different
 {
-    internal class Exc05
+    internal class Exc05    //use subtract method
     {
-        public static bool CompareDate (DateTime A, DateTime B, 
+        public static bool CompareDate(DateTime A, DateTime B,
             TimeSpan Interval)
-        {
-            if (A == B) return true;
-            else if (A > B)
-            {
-                for (int i = 1; i <= Interval.Ticks; i++)
-                {
-                    long ticky = A.Ticks - i;
-                    if (ticky == B.Ticks) return true;
-                }
-                return false;
-            }
-            else
-            {
-                for(int i = 1; i <= Interval.Ticks; i++)
-                {
-                    long ticky = A.Ticks + i;
-                    if (ticky == B.Ticks) return true;
-                }
-                return false;
-            }
+        {   
+            TimeSpan resultSubtract = A.Subtract(B);
+            return Interval >= resultSubtract.Duration();
         }
 
         public static void MainExc05()

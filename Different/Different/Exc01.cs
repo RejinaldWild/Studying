@@ -5,6 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//алгоритмы = 3 leetcode, hackerank
+//структуры = 3 leetcode, hackerank
+//базы данных = 2
+//проект = 1
+
 namespace Different
 {
     internal class Exc01
@@ -20,8 +25,8 @@ namespace Different
                 title = "Guess number", 
                 MessageBoxButtons.OK,
                 icon = MessageBoxIcon.Question);
-            TextBox result = new TextBox();         //???
-            result.Text = Console.ReadLine();
+            //TextBox result = new TextBox();         //???
+            //result.Text = Console.ReadLine();
             int num = 2;
             if(num == number)
             {

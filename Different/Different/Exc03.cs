@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Different
 {
-    internal class Exc03
+    internal class Exc03        //CompareTo (day => month=> year)
     {
         public static void MainExc03()
         {
@@ -17,32 +17,82 @@ namespace Different
             Console.WriteLine("Input your Year of Birthday");
             int year = Int32.Parse(Console.ReadLine());
             DateTime today = DateTime.Today;
-            DateTime DoB = new DateTime(year, month, day);
-            int resDay = 0;
-            int resMonth = 0;
-            int resYear = 0;
-            if (today.Month >= month)
-            {
-                resMonth = today.Month - month;
-                resYear = today.Year - year;
-            }
-            else
-            {
-                resMonth = (12 - month) + today.Month;
-                resYear = today.Year - year - 1;
-            }
+            DateTime doB = new DateTime(year, month, day);
+            
+            TimeSpan liveds = today.Subtract(doB);
+            DateTime lived = new DateTime(IsYear(today,doB),IsMonth(today, doB),IsDay(today, doB)); // use other variables
+            Console.WriteLine(lived.Day.ToString()+'.'+ lived.Month.ToString()+'.'+ lived.Year.ToString());
+        }
 
-            if (today.Day >= DoB.Day)
+        public static int IsYear(DateTime dateToday, DateTime dateDate)
+        {
+            int year = dateToday.Year.CompareTo(dateDate.Year);
+            if (year == 1)
             {
-                DateTime.DaysInMonth(today.Year, today.Month);
-                resDay = today.Day - DoB.Day;
+                if (dateToday.Month > dateDate.Month)
+                {
+                    return dateToday.Year - dateDate.Year;
+                }
+                else if(dateToday.Day>=dateDate.Day && dateToday.Month==dateDate.Month)
+                {
+                    return dateToday.Year - dateDate.Year;
+                }
+                else
+                {
+                    return dateToday.Year - dateDate.Year - 1;
+                }
+                
+            }
+            else if (year == 0)
+            {                
+                return 0;
             }
             else
             {
-                resDay = (31-day) + today.Day;
+                Console.WriteLine("You have not born yet!");
+                return 0;
+            }            
+        }
+
+        public static int IsMonth(DateTime dateToday, DateTime dateDate)
+        {
+            int month = dateToday.Month.CompareTo(dateDate.Month);
+            if(month == 1)
+            {
+                if (dateToday.Month > dateDate.Month || dateToday.Day >= dateDate.Day)
+                {
+                    return dateToday.Month - dateDate.Month;
+                }                
+                else
+                {
+                    return dateToday.Month - dateDate.Month - 1;
+                }
             }
-            DateTime Lived = new DateTime(resYear,resMonth,resDay);
-            Console.WriteLine(Lived.ToString());
+            else if (month == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                return (12 - dateDate.Month) + dateToday.Month;               
+            }
+        }
+
+        public static int IsDay(DateTime dateToday, DateTime dateDate)
+        {
+            int day = dateToday.Day.CompareTo(dateDate.Day);
+            if (day == 1)
+            {
+                return dateToday.Day - dateDate.Day;
+            }
+            else if (day == 0)
+            {
+                return 0;
+            }
+            else
+            {                
+                return (30 - dateDate.Day) + dateToday.Day;
+            }
         }
     }
 }
