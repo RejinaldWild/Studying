@@ -22,7 +22,7 @@ namespace Different
             //Listing10.MainListing10();
             //Listing11.MainListing11();
             //Listing12.MainListing12();
-            //Exc01.MainExc01();                //??? граф интрефейс
+            //Exc01.MainExc01();                //??? граф интерфейс
             //Exc02.MainExc02();
             //Exc03.MainExc03();                //считается, что 30 дней в месяце
             //Exc04.MainExc04();
