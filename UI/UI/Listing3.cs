@@ -12,11 +12,12 @@ namespace UI
     {
         public MyFormL3 (string msg,string title) : base()
         {
+            //this is used for easier understanding
             this.Text = title;
             this.Size = new Size(300, 140);
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            string file = "D:\\covid_coronavirus_cough_coughing_flu_icon_189128.ico";
+            string file = "D:\\Programming\\GitHubProject\\Studying\\UI\\covid_coronavirus_cough_coughing_flu_icon_189128.ico";
             this.Icon = new Icon(file);
             Label helloLabel = new Label();
             helloLabel.Text = msg;
@@ -34,12 +35,12 @@ namespace UI
             buttonClose.Text = "Close";
             buttonClose.Bounds = new Rectangle(100, 60, 90, 30);
             buttonClose.Font = new Font(buttonClose.Font.Name,
-                buttonClose.Font.Size + 3,
+                buttonClose.Font.Size+3,
                 FontStyle.Underline | FontStyle.Bold);
             buttonClose.Click += delegate (object a, EventArgs b)
-              {
+            {
                   Application.Exit();
-              };
+            };
             this.Controls.Add(buttonClose);
         }
     }
