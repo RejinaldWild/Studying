@@ -17,7 +17,8 @@ namespace UI
             private string Path = "D:/Programming/GitHubProject/Studying/UI/";
             public MyFormL7(string t,bool state) : base()
             {
-                string txt = "Giraffe", file = "Giraffe.png";
+                string txt = "Giraffe";
+                string file = "Giraffe.jpg";
                 for(int k = 0; k < Animals.Length; k++)
                 {
                     if ((t == Animals[k]) || ((t.ToLower() == Animals[k].ToLower()) & state))
