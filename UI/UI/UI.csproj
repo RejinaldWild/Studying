@@ -49,6 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Listing1.cs" />
+    <Compile Include="Listing10.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Listing2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +71,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Listing8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listing9.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Program.cs" />
