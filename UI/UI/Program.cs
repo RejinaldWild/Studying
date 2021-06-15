@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace UI
 {
@@ -21,6 +22,10 @@ namespace UI
             //Listing8.ListingMain08();
             //Listing9.ListingMain09();
             //Listing10.ListingMain10();
+            //Exc01.ExcMain01();
+            //Exc02.ExcMain02();
+            //Exc03.ExcMain03();
+            Exc04.ExcMain04();
         }
     }
 }
