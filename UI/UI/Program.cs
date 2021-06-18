@@ -25,7 +25,10 @@ namespace UI
             //Exc01.ExcMain01();
             //Exc02.ExcMain02();
             //Exc03.ExcMain03();
-            Exc04.ExcMain04();
+            //Exc04.ExcMain04();
+            //Exc05.ExcMain06();
+            //Exc06.ExcMain06();
+
         }
     }
 }
