@@ -28,7 +28,10 @@ namespace UI
             //Exc04.ExcMain04();
             //Exc05.ExcMain06();
             //Exc06.ExcMain06();
-
+            //Exc07.ExcMain07();
+            //Exc08.ExcMain08();
+            Exc09.ExcMain09();
+            //Exc10 - WPF App
         }
     }
 }
