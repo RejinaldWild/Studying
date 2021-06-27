@@ -20,9 +20,9 @@ namespace WPFCalculator
     /// </summary>
     public partial class MainWindow : Window
     {
-        string lefttop = "";
-        string operation = "";
-        string righttop = "";
+        string lefttop = "" ;
+        string operation = "" ;
+        string righttop = "" ;
 
         public MainWindow()
         {
